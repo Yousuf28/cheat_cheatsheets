@@ -32,6 +32,10 @@ git stash pop
 # from the stash list
 git stash apply stash@{6}
 
+# ignore a tracked file/directory without deleting it
+git rm --cached file.txt
+git rm --cached files/
+
 # To commit staged changes:
 git commit -m <message>
 
